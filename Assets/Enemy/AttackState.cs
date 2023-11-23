@@ -70,7 +70,7 @@ public void Shoot()
   Transform gunbarrel = enemy.gunBarrel;
   GameObject bullet=GameObject.Instantiate(Resources.Load("bullet3 1")as GameObject, gunbarrel.position,enemy.transform.rotation);
   Vector3 shootDirection=(enemy.Player.transform.position-gunbarrel.transform.position).normalized;
-  bullet.GetComponent<Rigidbody>().velocity=Quaternion.AngleAxis(Random.Range(-3f,3f),Vector3.up)*shootDirection*40;
+  bullet.GetComponent<Rigidbody>().velocity=Quaternion.AngleAxis(Random.Range(-3f,3f),Vector3.up)*shootDirection*100;
   Debug.Log("shoot!");
   shotTimer=0;
   //我是來測試GITHUB更新的
