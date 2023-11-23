@@ -19,7 +19,7 @@ public float shotTimer;
 
         
     }
-//我來測試
+//我來測試SSSS
     public override void Perform()
     {
       if(enemy.CanSeePlayer())
