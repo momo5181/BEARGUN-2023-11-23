@@ -19,12 +19,13 @@ public class PlayerHealth : MonoBehaviour
     {
         if(currentHealth<=0)
         {
-            SceneManager.LoadScene(2);
+           PlayerDie();
         }
-         //if (Input.GetKeyDown(KeyCode.Space)){
-          //  TakeDamage(2);
-        // }
-        
+            
+    }
+    void PlayerDie()
+    {
+         SceneManager.LoadScene(2);
     }
     public void TakeDamage(int damage){//調用上述Takedamage(2)，把2轉接成damage變數
         currentHealth -=damage ;//currenthealth初始直=100,受到傷害-2

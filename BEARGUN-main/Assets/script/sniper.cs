@@ -281,6 +281,7 @@ public class sniper : MonoBehaviour
 
         muzzleFlash.Play();//火花特效
         muzzleFlash2.Play();
+       //以下是開火原理 
         RaycastHit hit;
        if(Physics.Raycast(fpsCam.transform.position , fpsCam.transform.forward , out hit, range))//設定子但從玩家攝相機發射且不能超過所設的範圍
        {

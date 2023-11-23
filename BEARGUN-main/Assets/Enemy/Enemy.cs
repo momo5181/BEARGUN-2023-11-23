@@ -17,8 +17,8 @@ public class Enemy : MonoBehaviour
     private string currentState;
     //public Path path; 
     private GameObject player;
-    [Header("槍")]
-    public Transform gunBarrel;
+   // [Header("槍")]
+   //public Transform gunBarrel;
     [Range(0.1f,10f)]
     public float fireRate;
     [Header("視野")]
